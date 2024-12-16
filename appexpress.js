@@ -3,7 +3,7 @@ const connection = require('./db'); // Importa la conexión desde db.js
 const path = require('path'); // Requiere el módulo path para servir archivos estáticos
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 4000;
 
 // Sirve archivos estáticos desde la carpeta 'public'
 app.use(express.static(path.join(__dirname, 'public')));
@@ -58,6 +58,6 @@ app.get('/', (req, res) => {
 });
 
 // Iniciar el servidor
-app.listen(port, '0.0.0.0', () => {
-    console.log(`Servidor corriendo en http://0.0.0.0:${port}`);
-});
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+  });
