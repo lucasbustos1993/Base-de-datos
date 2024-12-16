@@ -1,0 +1,108 @@
+/* Estilo general de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0f0f17; /* Fondo oscuro similar al de la imagen */
+    color: #ffffff; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Encabezado principal */
+h1 {
+    color: #c78cf2; /* Tono violeta claro */
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    padding: 20px;
+}
+
+/* Botones estilo tarjeta */
+.button {
+    display: block;
+    background: #1f1f2e; /* Color oscuro para los botones */
+    color: #ffffff;
+    border: 1px solid #5a3b8e; /* Borde violeta */
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover */
+.button:hover {
+    background: #5a3b8e; /* Violeta al pasar el cursor */
+    color: #fff;
+    border: 1px solid #9b72cf;
+    box-shadow: 0 0 10px rgba(200, 140, 242, 0.7);
+}
+
+/* Imagen principal */
+.main-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Pie de página */
+footer {
+    color: #c78cf2;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.song-container {
+    display: flex;
+    align-items: center;  /* Alinea los elementos verticalmente en el centro */
+    justify-content: center;
+    gap: 15px;  /* Espacio entre el enlace y el botón */
+}
+
+.lyrics-container {
+    background-color: #2c3e50; /* Fondo oscuro */
+    color: #ecf0f1; /* Texto claro */
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    white-space: pre-wrap; /* Respeta los saltos de línea y los espacios */
+    word-wrap: break-word; /* Rompe las palabras largas si es necesario */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* Aumenta el espacio entre líneas */
+    max-height: 300px; /* Limita la altura para hacerla más manejable */
+    overflow-y: auto; /* Habilita el desplazamiento si la letra es muy larga */
+}
+
+.show-lyrics-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.show-lyrics-btn:hover {
+    background-color: #2980b9;
+}
+
+.letra-cancion {
+    background-color: #2c3e50; /* Fondo oscuro */
+    color: #ecf0f1; /* Texto claro */
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    white-space: pre-wrap; /* Respeta los saltos de línea y los espacios */
+    word-wrap: break-word; /* Rompe las palabras largas si es necesario */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* Aumenta el espacio entre líneas */
+}
